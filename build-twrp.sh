@@ -1,5 +1,5 @@
 #!/bin/bash
-WORKSPACE=~/twrp
+WORKSPACE=~/test1
 TWRP_SOURCE=git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
 TWRP_BRANCH=twrp-10.0
 DEVICE_CODE=spartan
