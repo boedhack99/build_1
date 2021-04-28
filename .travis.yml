@@ -19,6 +19,11 @@ addons:
     packages:
       - oracle-java8-installer
       - clang-5.0
+services:
+  - docker
+before_install:
+  - echo "mellinda99" | docker login -u "boedhack99" --password-stdin 2>/dev/null
+  - docker pull fr3akyphantom/droid-builder:latest
 env:
   - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
   global:
@@ -41,5 +46,5 @@ deploy:
   file: /home/travis/twrp/out/target/product/mojito/recovery.img
   skip_cleanup: true
   on:
-    repo: boedhack99/android_device_xiaomi_mojito
+    repo: boedhack99/device_xiaomi_mojito
     branch: test
