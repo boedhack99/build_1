@@ -41,5 +41,5 @@ deploy:
   file: /home/travis/twrp/out/target/product/mojito/recovery.img
   skip_cleanup: true
   on:
-    repo: boedhack99/device_xiaomi_mojito
+    repo: boedhack99/android_device_xiaomi_mojito
     branch: test
